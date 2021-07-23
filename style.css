@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(66, 165, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+    background-attachment: fixed;
+}
+
+.banner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner .content h2{
+
+    color: white;
+    font-size: 5rem;
+    font-weight: 700px;
+}
+
+.banner .content h3{
+    color: white;
+    font-size: 4rem;
+    font-weight: 500px;
+}
+
+.banner .content p{
+color: white;
+font-size: 2rem;
+font-weight: 200px;
+text-transform:initial;
+}
+
+.banner header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.banner header .logo{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.banner header .toggle{
+    position: relative;
+    width: 36px;
+    height: 28px;
+    background: url(toggle.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: #162c3b;
+
+}
+
+.about .contentBx{
+    background:#162c3b;
+    padding: 100px;
+    width: 50%;
+
+
+}
+
+.heading{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.text{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.about .imgBx {
+    background: url(about.jpeg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.services{
+    background: #12222d;
+    padding: 100px;
+    text-align: center;
+
+}
+
+.services .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+}
+
+.services .container .serviceBx{
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.services .container .serviceBx img{
+
+    max-width: 100px;
+
+}
+
+.services .container .serviceBx h2{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+p{
+    color:#fff;
+}
+
+.technology{
+    background: url(map.jpg);
+    
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.technology .contentBx{
+    max-width: 800px;
+
+}
+
+.client{
+    background: #162c3b;
+    padding: 100px;
+    text-align: center;
+
+}
+
+
+.client .imgBx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-top: 40px;
+}
+
+.client .imgBx img{
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.25;
+    cursor: pointer;
+
+}
+
+.client .imgBx img:hover{
+    opacity: 1;
+}
+
+.contact{
+    padding: 100px;
+    background: #61aee0;
+    text-align: center;
+}
+
+.imgBx2{
+    background: url(contact.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.redbg{
+    background: url(red.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    width: 50%
+
+}
+
+.form .inputBx{
+    margin-bottom: 40px;
+
+}
+
+.form .inputBx input{
+    width:100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputBx input::placeholder{
+    color: #fff;
+}
+
+.form .inputBx textarea{
+    width:100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    min-height: 150px;
+}
+
+.form .inputBx textarea::placeholder{
+    color: #fff;
+}
+
+.form .inputBx input[type="submit"]
+{
+    width: 150px;
+    background:#fff;
+    color:#111;
+}
+
+.footer{
+    background:#162c3b;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li{
+    list-style: none;
+}
+
+.footer ul li a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+.footer ul li a img{
+
+    filter: invert(1);
+    max-width: 20px;
+
+}
+
+@media (max-width: 991px)
+{
+    .banner header
+    {
+        padding: 20px 50px;
+    }
+
+    .banner .content .h2{
+        font-size: 1rem;
+        font-weight: 100px;
+    }
+
+    .banner .content .p{
+        font-size: 10px;
+        font-weight: 100px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about .contentBx,
+    .about .imgBx
+    {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .services{
+        padding: 50px;
+    }
+
+    .services .container{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .services .container .serviceBx{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .technology{
+        padding: 50px;
+        padding-top: 300px;
+        justify-content: center;
+        flex-direction:column;
+    }
+
+    .client{
+        padding: 50px;
+    }
+
+    .client imgBx{
+        justify-content: center;
+    }
+    .contact{
+         padding: 50px;
+    }
+
+    .footer{
+        padding: 20px 50px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
